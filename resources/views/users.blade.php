@@ -11,9 +11,9 @@
                 <table class="table-auto">
                     <thead>
                         <tr>
-                            <th class="border px-4 py-2">Id</th>
-                            <th class="border w-1/2 px-4 py-2">Nome</th>
-                            <th class="border w-1/2 px-4 py-2">E-mail</th>
+                            <th class="px-4 py-2">#</th>
+                            <th class="w-1/2 px-4 py-2">Nome</th>
+                            <th class="w-1/2 px-4 py-2">E-mail</th>
                           </tr>
                     </thead>
                     <tbody>

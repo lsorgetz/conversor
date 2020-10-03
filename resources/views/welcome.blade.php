@@ -4,8 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
-        <link rel="icon" type="image/png" href="<?= asset('img/logo1.png'); ?>">
+        <title>{{config('app.name')}}</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -25,7 +24,7 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
+                        <a href="{{ url('/conversor') }}" class="text-sm text-gray-700 underline">Conversor</a>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
 
@@ -38,14 +37,10 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    {{-- <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20"> --}}
-                        {{-- <g clip-path="url(#clip0)" fill="#EF3B2D"> --}}
-                        <img src="{{ asset("/img/logo.jpg") }}" alt="">
-                            {{-- <path d="/img/logo.jpg"/> --}}
-                        {{-- </g> --}}
-                    {{-- </svg> --}}
+                    <img src="{{ asset("/img/logo3.jpg") }}" alt="">
                 </div>
           </div>
+
         </div>
     </body>
 </html>
